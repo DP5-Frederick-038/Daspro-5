@@ -1,0 +1,18 @@
+Program UTS_LabDaspro5_Soal2;
+
+uses crt;
+
+var
+    nama_awal, nama_akhir : string;
+    suhu_celcius, suhu_reamur, suhu_kelvin, suhu_fahrenheit : real;
+
+begin
+    clrscr;
+    write ('Masukkan nama awal  : '); readln (nama_awal);
+    write ('Masukkan nama akhir : '); readln (nama_akhir);
+    write ('Masukkan suhu hari ini dalam celcius : '); readln (suhu_celcius);
+    suhu_reamur := 4 / 5 * suhu_celcius;
+    suhu_kelvin := 273 + suhu_celcius;
+    suhu_fahrenheit := 9 / 5 * suhu_celcius + 32;
+    writeln ('Halo ', nama_awal, ' ', nama_akhir, ', hari ini bershuhu ', suhu_reamur:0:2, ' reamur / ', suhu_kelvin:0:2, ' Kelvin / ', suhu_fahrenheit:0:2, ' Fahrenheit.');
+end.

@@ -1,0 +1,21 @@
+Program UTS_LabDaspro5_Soal1;
+
+uses crt;
+
+var
+    nama, waktu : string;
+
+begin
+    clrscr;
+    write ('Masukkan nama                     : '); readln (nama);
+    write ('Masukkan waktu [pagi/siang/malam] : '); readln (waktu);
+    writeln ('S');
+    writeln ('E');
+    writeln ('L');
+    writeln ('A');
+    writeln ('M');
+    writeln ('A');
+    writeln ('T');
+    writeln (waktu);
+    writeln (nama);
+end.

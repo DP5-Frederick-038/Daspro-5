@@ -1,0 +1,36 @@
+Program UTS_LabDaspro5_Soal3;
+
+uses crt;
+
+var
+    x, y, kuadran : integer;
+
+begin
+    clrscr;
+    write ('Masukkan titik x : '); readln (x);
+    write ('Masukkan titik y : '); readln (y);
+    if (x > 0) AND (y > 0) then
+        begin
+            kuadran := 1;
+            writeln ('Titik Anda berada di kuadran ', kuadran);
+        end
+    else if (x > 0) AND (y < 0) then
+        begin
+            kuadran := 4;
+            writeln ('Titik Anda berada di kuadran ', kuadran);
+        end
+    else if (x < 0) AND (y > 0) then
+        begin
+            kuadran := 2;
+            writeln ('Titik Anda berada di kuadran ', kuadran);
+        end
+    else if (x < 0) AND (y < 0) then
+        begin
+            kuadran := 3;
+            writeln ('Titik Anda berada di kuadran ', kuadran);
+        end
+    else if (x = 0) AND (y = 0) then
+        begin
+            writeln ('invalid input');
+        end;
+end.

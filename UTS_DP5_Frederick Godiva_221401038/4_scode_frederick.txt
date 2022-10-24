@@ -1,0 +1,35 @@
+Program UTS_LabDaspro5_Soal4;
+
+uses crt;
+
+var 
+    n, i, j : integer;
+
+begin
+    clrscr;
+    write ('n = '); readln (n);
+    for i := 1 to n do
+        begin
+            for j:=1 to n-i do
+            begin
+                write(' ');
+            end;
+            for j := 1 to i do
+                begin
+                    write('* ');
+                end;
+            writeln;
+        end;
+    for i:= n-1 downto 1 do
+        begin
+            for j := 1 to n-i do
+                begin
+                    write(' ');
+                end;
+            for j := 1 to i do
+                begin
+                    write('* ');
+                end;
+            writeln;
+        end;
+end.

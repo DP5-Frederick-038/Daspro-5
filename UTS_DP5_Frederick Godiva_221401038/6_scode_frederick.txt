@@ -1,0 +1,15 @@
+Program UTS_LabDaspro5_Soal6;
+
+uses crt;
+
+var
+    i : integer;
+
+begin
+    clrscr;
+    i := 0;
+    repeat
+        i := i + 1;
+        write (i, ' ');
+    until (i = 6);
+end.
